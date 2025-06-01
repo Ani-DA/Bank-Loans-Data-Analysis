@@ -50,11 +50,15 @@ This project is an exploratory analysis of loan performance data. Rather than be
 
 **Key Questions Explored**
 
-Q1: What patterns emerge between credit ratings and loan performance?
+* What patterns emerge between credit ratings and loan performance?
 
-Q2: Are there specific borrower segments with higher default or charge-off rates?
+* Are there specific borrower segments with higher default or charge-off rates?
 
-Q3: What proportion of loans with high Debt-to-Income (DTI) ratios result in delinquency or charge-offs?
+* What proportion of loans with high Debt-to-Income (DTI) ratios result in delinquency or charge-offs?
+
+* Does Annual income of the customers play any role in loans becoming delinquent or charged off?
+
+* What percentage of loans with high Loan amount are becoming delinquent or charged off?    
 
 **Initial KPI Highlights**
 **`Total number of loans`**
@@ -123,7 +127,7 @@ Small Business loans show the highest risk, with 27% resulting in charge-offs, i
 
 **Insights**
 
-Term-Based Loan Insight
+* Term-Based Loan Insight
 Bad loans are 150% more prevalent in long-term loans compared to short-term loans, highlighting a significantly higher risk profile. However, long-term loans account for 67% fewer applications, suggesting borrowers prefer shorter repayment periods despite the trade-offs in monthly installment size.
 
 
@@ -132,6 +136,114 @@ Bad loans are 150% more prevalent in long-term loans compared to short-term loan
 
 **Insights**
 
-Regional Loan Performance Insight
+* Regional Loan Performance Insight
 Wales leads in overall loan volume, indicating high borrower activity. However, 14% of its loans are classified as bad loans, slightly below the national high. The West Midlands shows the highest proportion of bad loans at 18%, signaling a potential regional credit risk that warrants further investigation and tighter lending criteria.
+
+
+![vz7](https://github.com/user-attachments/assets/010c8f91-ec86-4708-be9c-763dae7d24b1)
+
+
+**Insights**
+
+* Verification Status & Loan Risk
+Verified customers make up approximately 60% of the loan portfolio, reflecting strong verification practices. Interestingly, bad loans account for 15.5% of the verified group compared to 12.3% in the unverified segment. This counterintuitive trend suggests that verification alone doesn't guarantee lower risk—highlighting the need to enhance credit risk models beyond basic verification.
+
+
+
+![vz8](https://github.com/user-attachments/assets/20887dcf-6103-453b-b894-a1e3bb9f0ff6)
+
+**Insights**
+
+* Income Band vs Loan Performance
+The majority of borrowers fall within the £25K–£200K income range, with the £50K–£100K band showing the highest loan volume. Notably, higher income groups (above £200K) exhibit strong repayment behavior with minimal bad loans. However, despite contributing under 1% of total loans, the £500K–£1M segment shows a disproportionately higher bad loan rate, suggesting outlier behavior that may require closer review.
+
+
+
+![vz9](https://github.com/user-attachments/assets/a3e2dd4d-10e2-48e5-91cb-3aa1170d01c7)
+
+**Insights**
+
+* Loan Amount vs Default Rate
+Default rates show a clear upward trend with increasing loan amounts. While smaller loans (≤ £10K) have default rates around 12–13%, this rate steadily rises to 24% for loans in the £30K–£35K range. This suggests that higher loan amounts carry significantly higher credit risk and may warrant stricter approval criteria or closer monitoring.
+
+
+
+![vz10](https://github.com/user-attachments/assets/c5e183f2-2d21-42dd-9492-2ed7d4c83317)
+
+
+**Insights**
+
+* Employment Tenure vs Loan Defaults
+Bad loan rates remain relatively stable between 13–15% across most employment tenure groups. However, customers with 10+ years of employment show a slightly elevated default rate of 16%. Notably, this segment also represents the largest share of total loan takers, indicating that while long-term employment may correlate with higher borrowing activity, it does not necessarily reduce credit risk.
+
+
+
+![vz11](https://github.com/user-attachments/assets/f154d160-477a-49ef-b65d-c0a9a5c38cfa)
+
+**Insights**
+
+* Debt-to-Income (DTI) Ratio vs Loan Default Rates
+Bad loan rates generally increase with rising DTI ratios, indicating a correlation between higher debt burden and default risk. However, the highest DTI band (25–30%) breaks this trend, showing a lower default rate of 13%, compared to the 17% peak in the 20–25% band. This anomaly may be less impactful as this segment accounts for only 2% of total loans.
+
+
+
+![vz12](https://github.com/user-attachments/assets/13458e8a-fd83-4aae-b51b-9e52018127df)
+
+
+**Insights**
+
+* Loan Default by Home Ownership Status
+Customers who rent or have mortgages account for a higher volume of loans and exhibit default rates between 13–15%, which aligns with the overall average. However, customers with ambiguous or 'Other' home ownership status show a notably higher default rate of 18%, signaling potential risk factors or lack of documentation in this group.
+
+
+
+![vz13](https://github.com/user-attachments/assets/4aa530cf-e276-4819-a2b1-59fe8b955fba)
+
+**Insights**
+
+* Credit Rating vs Loan Default Probability
+Credit rating is a strong predictor of loan default risk. Borrowers with poor or subprime credit ratings exhibit a significantly higher percentage of bad loans, highlighting a clear inverse relationship between creditworthiness and repayment reliability. This emphasizes the importance of credit scoring in risk assessment and loan approval strategies.
+
+
+
+
+
+## 3.Code Analysis
+
+
+* To implement the Good Vs Bad loans analysis, the loan status values were grouped in Power BI, which made the analysis and visualization quite easy.
+
+![ca1](https://github.com/user-attachments/assets/e0e77c90-6e15-41b8-9f09-8df2f6f74065)
+
+
+
+* To calculate the loss amount for Charged Off loans, Total On-going loans, Total Repaid Loans DAX function `Calculate()` has been used.
+
+![ca2](https://github.com/user-attachments/assets/57af7680-6b35-4fdd-b96e-282b4fab644f)
+
+
+![ca5](https://github.com/user-attachments/assets/4f2c7f61-60e2-471f-ba61-e098203c9300)
+
+
+![ca6](https://github.com/user-attachments/assets/709f190f-4dc9-44bb-b42f-341c08d42750)
+
+
+
+* To accertain whether there is any relation betweeen loan amount and loans being charged off, loan amount bins were created in SQL and then used that result to visualise in Power BI.
+
+![ca3](https://github.com/user-attachments/assets/64016383-c708-45f4-8028-7ddf95a609d4)
+
+
+To establish relation between Debt to Income ration and loans being charged off, in SQl DTI bins are created and then visualisation is done in Power BI.
+
+![ca4](https://github.com/user-attachments/assets/8fa4c5ab-525a-433a-9cb8-cc703d9c3e0f)
+
+
+
+
+
+
+## 5. Reccomendation
+
+
 
