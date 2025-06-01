@@ -243,7 +243,58 @@ To establish relation between Debt to Income ration and loans being charged off,
 
 
 
-## 5. Reccomendation
+## 5. Recommendations
+
+**1. Enhance Customer Verification Processes**
+* Verified customers form the majority (~60%) of the loan base but also have a slightly higher bad loan percentage than unverified ones. This suggests the verification process alone is not a guarantee of low risk. It's recommended to:
+
+* Strengthen verification with multi-factor financial checks.
+
+* Include behavioral and historical credit data in the verification pipeline.
+
+**2. Target Mid-Income Segments Cautiously**
+* The majority of borrowers fall within the £25K–£200K income range, with the £50K–£100K bracket showing high bad loan volumes. Consider:
+
+* Enhanced affordability checks for this band.
+
+* Offering graduated interest rates based on detailed credit scoring.
+
+**3. Cap High Loan Amounts or Enforce Stricter Underwriting**
+* Bad loan percentages increase steadily with higher loan amounts, peaking at 24% in the £30K–£35K range. It's advisable to:
+
+* Impose tighter eligibility criteria for larger loans.
+
+* Introduce tiered risk pricing or collateral requirements for loans >£25K.
+
+**4. Watch Long-Term Employees Despite Stability**
+* Borrowers with 10+ years of employment form the largest segment but have a bad loan rate of 16%, slightly above average. This group may present:
+
+* Overconfidence in approval policies due to job stability.
+
+* Suggestion: Combine employment length with DTI and credit behavior for better risk calibration.
+
+**5. Use DTI as a Risk Indicator but Monitor Anomalies**
+* Bad loan rates generally rise with DTI, peaking at 17% in the 20–25% range, before dropping unexpectedly in the 25–30% band. Recommendations:
+
+* Set DTI caps around 20–25% for standard loans.
+
+* Investigate further why high DTI borrowers (25–30%) perform better—this could indicate selection bias or a small sample anomaly.
+
+**6. Monitor 'Other' Homeownership Status**
+* Borrowers classified under ‘Other’ homeownership have the highest default rate (18%). This segment may lack financial stability or be under-documented. Suggested actions:
+
+* Require additional financial documentation.
+
+* Offer lower loan limits or higher interest rates until risk is proven.
+
+**7. Heavily Weigh Credit Rating in Loan Decisions**
+* A clear trend shows worsening credit scores correspond to significantly higher default rates. To reduce portfolio risk:
+
+* Incorporate automated credit score tiers into approval and pricing algorithms.
+
+* Consider loan rejection or secured loan options for borrowers in the subprime category.
+
+
 
 
 
