@@ -109,6 +109,29 @@ Let's start with the **KPIs**
 
 
 
+![vz4](https://github.com/user-attachments/assets/d6c7692f-7cac-428b-97f8-67a6560908ec)
+
+**Insights**
+
+* Segment Insight
+Small Business loans show the highest risk, with 27% resulting in charge-offs, indicating elevated default potential in this segment. In contrast, Debt Consolidation loans not only have the highest repayment rate but also emerge as the most common loan purpose, reflecting both popularity and reliability in borrower performance.
 
 
+
+![vz5](https://github.com/user-attachments/assets/959221af-165b-46f4-95b4-bbc466a702a4)
+
+
+**Insights**
+
+Term-Based Loan Insight
+Bad loans are 150% more prevalent in long-term loans compared to short-term loans, highlighting a significantly higher risk profile. However, long-term loans account for 67% fewer applications, suggesting borrowers prefer shorter repayment periods despite the trade-offs in monthly installment size.
+
+
+
+![vz6](https://github.com/user-attachments/assets/c3f6b70f-06b9-45e4-959a-cd4aa008f706)
+
+**Insights**
+
+Regional Loan Performance Insight
+Wales leads in overall loan volume, indicating high borrower activity. However, 14% of its loans are classified as bad loans, slightly below the national high. The West Midlands shows the highest proportion of bad loans at 18%, signaling a potential regional credit risk that warrants further investigation and tighter lending criteria.
 
